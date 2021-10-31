@@ -1,0 +1,48 @@
+[
+    {
+        "threadID": "6556884460988283",
+        "listRule": []
+    },
+    {
+        "threadID": "6837132386312901",
+        "listRule": [
+            "Không spam bot",
+            "Như luật trên",
+            "Cấm ảnh ma"
+        ]
+    },
+    {
+        "threadID": "3759052324182153",
+        "listRule": [
+            "Cấm spam",
+            "Rời nhóm nhớ xin phép"
+        ]
+    },
+    {
+        "threadID": "4656458447705913",
+        "listRule": []
+    },
+    {
+        "threadID": "5066630486741072",
+        "listRule": [
+            "Không tùy tiện sử dụng Prefix { / }",
+            "không spam lệnh khi box có tương tác trên 10",
+            "ngôn ngữ đả kích hoạt link phản động /ban"
+        ]
+    },
+    {
+        "threadID": "5063299007031191",
+        "listRule": [
+            "LUẬT BOX",
+            "•Ko dùng icon :) 🙃( sau 7 lần nhắc nhở kick)",
+            "•Không gây war",
+            "•Out phải nói",
+            "•Chăm tt xíu",
+            "•Sau 3 ngày sẽ lọc tv",
+            "•Không gửi link",
+            "•Nếu bận ít tt thì báo với qtv và thêm 🚫 để tránh lọc nhầm",
+            "•không tự ý sử dụng Prefix đơn",
+            "CẤM chửi bot"
+        ]
+    }
+]

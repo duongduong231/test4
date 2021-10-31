@@ -1,0 +1,308 @@
+{
+  "student": [
+    {
+      "stt": 1,
+      "name": "PHAN THẾ ANH",
+      "birthday": "18/10/2004",
+      "gender": "Nam",
+      "image": [
+        "https://tinyurl.com/yghc49a6"
+      ]
+    },
+    {
+      "stt": 2,
+      "name": "NGUYỄN HẢI BÌNH",
+      "birthday": "08/02/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 3,
+      "name": "ĐỖ MẠNH DŨNG",
+      "birthday": "03/11/2004",
+      "gender": "Nam",
+      "image": [
+        "https://tinyurl.com/yzdtvmwp"
+      ]
+    },
+    {
+      "stt": 4,
+      "name": "ĐỖ THÁI DƯƠNG",
+      "birthday": "08/11/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 5,
+      "name": "HỒ THỊ MỸ DUYÊN",
+      "birthday": "20/11/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 6,
+      "name": "NGUYỄN THỊ NGỌC DUYÊN",
+      "birthday": "30/01/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 7,
+      "name": "NGUYỄN HOÀNG GIA",
+      "birthday": "07/02/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 8,
+      "name": "VĂN ĐỖ XUÂN HÂN",
+      "birthday": "28/03/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 9,
+      "name": "NGUYỄN THỊ HỒNG HẠNH",
+      "birthday": "29/03/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 10,
+      "name": "PHẠM VĂN HẬU",
+      "birthday": "01/01/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 11,
+      "name": "TRẦN TRUNG HIẾU",
+      "birthday": "01/01/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 12,
+      "name": "ĐẶNG LÊ HOÀNG",
+      "birthday": "31/05/2004",
+      "gender": "Nam",
+      "image": [
+        "https://tinyurl.com/yzjxzk3s",
+        "https://tinyurl.com/yenrut4b"
+      ]
+    },
+    {
+      "stt": 13,
+      "name": "LÊ HOÀNG",
+      "birthday": "15/12/2004",
+      "gender": "Nam",
+      "image": [
+        "https://tinyurl.com/ye8t48wb"
+      ]
+    },
+    {
+      "stt": 14,
+      "name": "NGUYỄN HOÀNG",
+      "birthday": "29/07/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 15,
+      "name": "NGUYỄN HUY HOÀNG",
+      "birthday": "29/12/2003",
+      "gender": "Nam"
+    },
+    {
+      "stt": 16,
+      "name": "NGUYỄN HỮU NGỌC HOÀNG",
+      "birthday": "09/12/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 17,
+      "name": "TRẦN ĐĂNG HOÀNG",
+      "birthday": "02/10/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 18,
+      "name": "TRẦN MINH HOÀNG",
+      "birthday": "22/05/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 19,
+      "name": "TRẦN THỊ HUỆ",
+      "birthday": "22/02/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 20,
+      "name": "ĐỖ THẾ HÙNG",
+      "birthday": "08/02/2004",
+      "gender": "Nam",
+      "image": [
+        "https://tinyurl.com/yhtkefsf"
+      ]
+    },
+    {
+      "stt": 21,
+      "name": "NGUYỄN HUY HÙNG",
+      "birthday": "13/06/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 22,
+      "name": "NGUYỄN MẠNH HƯNG",
+      "birthday": "09/01/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 23,
+      "name": "LẠI ĐỨC HUY",
+      "birthday": "02/08/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 24,
+      "name": "NGUYỄN PHAN ĐÌNH HUY",
+      "birthday": "26/03/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 25,
+      "name": "TRẢO AN HUY",
+      "birthday": "12/01/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 26,
+      "name": "NGUYỄN ĐÀO DIỆU HUYỀN",
+      "birthday": "15/10/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 27,
+      "name": "NGUYỄN THỊ THU HUYỀN",
+      "birthday": "22/05/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 28,
+      "name": "PHAN NHƯ HUYỀN",
+      "birthday": "01/10/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 29,
+      "name": "VÕ GIA KHÁNH",
+      "birthday": "25/07/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 30,
+      "name": "ĐỖ VĨNH KHUÊ",
+      "birthday": "20/08/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 31,
+      "name": "NGUYỄN TIẾN KHƯƠNG",
+      "birthday": "17/04/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 32,
+      "name": "VÕ TRUNG KIÊN",
+      "birthday": "13/10/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 33,
+      "name": "NGUYỄN CAO CHI LÂM",
+      "birthday": "23/01/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 34,
+      "name": "ĐINH HẢI LONG",
+      "birthday": "11/11/2003",
+      "gender": "Nam"
+    },
+    {
+      "stt": 35,
+      "name": "HUỲNH PHI LONG",
+      "birthday": "03/11/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 36,
+      "name": "HUỲNH THỊ KHÁNH LY",
+      "birthday": "29/09/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 37,
+      "name": "ĐINH TRẦN TUYẾT NA",
+      "birthday": "02/11/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 38,
+      "name": "BÙI VIẾT THẢO NGÂN",
+      "birthday": "17/07/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 39,
+      "name": "NGUYỄN HOÀNG TUẤN NGHĨA",
+      "birthday": "04/10/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 40,
+      "name": "ĐINH DƯƠNG ĐĂNG NHÂN",
+      "birthday": "10/09/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 41,
+      "name": "NGUYỄN HOÀN NHỰT",
+      "birthday": "23/11/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 42,
+      "name": "NGUYỄN ANH QUẢNG",
+      "birthday": "11/01/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 43,
+      "name": "HỒ SỸ SƠN",
+      "birthday": "10/12/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 44,
+      "name": "NGUYỄN THỊ PHƯƠNG THẢO",
+      "birthday": "09/06/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 45,
+      "name": "HỒ THỊ HOÀI THƯ",
+      "birthday": "02/09/2004",
+      "gender": "Nữ"
+    },
+    {
+      "stt": 46,
+      "name": "PHAN VĂN THUẬN",
+      "birthday": "14/04/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 47,
+      "name": "LÊ MINH TUẤN",
+      "birthday": "18/01/2004",
+      "gender": "Nam"
+    },
+    {
+      "stt": 48,
+      "name": "NGUYỄN ANH TUẤN",
+      "birthday": "08/10/2004",
+      "gender": "Nam"
+    }
+  ]
+}
