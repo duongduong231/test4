@@ -1,0 +1,30 @@
+module.exports.config = {
+  name: "calladmin",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "banledangyeuu",
+  description: "",
+  commandCategory: "Group",
+  usages: "calladmin [Text]",
+  cooldowns: 5,
+  info: [
+    {
+      key: "Text",
+      prompt: "Lời muốn nói",
+      type: "Văn bản",
+      example: "ê"
+    }
+  ]
+};
+
+module.exports.run = async function({ api, event, args, __GLOBAL }) {
+      var {senderID, threadID, messageID} = event;
+      var content = args.join(" ");
+      const moment = require("moment-timezone");
+      let threadInfo = await api.getThreadInfo(threadID);
+      let userInfo = await api.getUserInfo(senderID);
+      let threadName = threadInfo.threadName;
+      let userName = userInfo[senderID].name;
+      if (!content) return api.sendMessage(`Viết gì đó đi Bro!`,threadID,messageID);
+      return api.sendMessage(`[🔊${userName}-${senderID}🔊]\n\n${content}\n\n Từ nhóm: ${threadName}-${threadID}`+ "\nLúc: " + moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss")+"\nNgày: " + moment.tz("Asia/Ho_Chi_Minh").format("DD-MM-YYYY"),__GLOBAL.settings.ADMINBOT[0]);
+}

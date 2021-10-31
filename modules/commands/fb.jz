@@ -1,0 +1,33 @@
+module.exports.config = {
+	name: "fb",
+	version: "1.0.0",
+	hasPermssion: 0,
+	credits: "MewMew",
+	description: "Lấy link tải video facebook",
+	commandCategory: "media",
+	usages: "fb [url]",
+	cooldowns: 5,
+	dependencies: ['axios','bitly','tinyurl']	,
+  info: [
+		{
+			key: "url",
+			prompt: "url video",
+			type: 'Văn bản',
+			example: 'https://www.facebook.com/marktwooo/videos/769195206993638'
+		}
+	]
+};
+
+module.exports.run = async function({ event, api, args }) {
+    var {threadID, senderID, messageID} = event;
+    const axios = require("axios");
+    const BitlyClient = require('bitly').BitlyClient
+ 	const bitly = new BitlyClient('18f5ca2341a761b009e36f1bf6e05ec30e960576');
+    var TinyURL = require('tinyurl');
+
+    return axios.get(args.join("")).then(res => {
+        const link = res.data.split('hd_src:"')[1].split('",sd_src:"')[0];
+        TinyURL.shorten(link).then(res => api.sendMessage(res,threadID,messageID))
+		//bitly.shorten(link).then(short => api.sendMessage(short.link,threadID,messageID))
+        }).catch()
+    }
