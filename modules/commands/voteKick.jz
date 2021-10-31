@@ -1,0 +1,42 @@
+module.exports.config = {
+	name: "kick",
+	version: "1.0.0", 
+	hasPermssion: 1,
+	credits: "Thọ",
+	description: "Xoá người bạn cần xoá khỏi nhóm bằng cách tag",
+	commandCategory: "other", 
+	usages: "kick [tag]", 
+	cooldowns: 0,
+	dependencies: [] 
+};
+
+module.exports.handleReaction = ({ api, event, handleReaction, client }) => {
+	if (!event.userID == handleReaction.author) return;
+	let response = "";
+	if (event.reaction == "👍") response = "True"
+	else response = "False";
+	if (response == handleReaction.answer) api.sendMessage("ye, bạn trả lời đúng rồi đấy xD", event.threadID);
+	else api.sendMessage("oops, bạn trả lời sai rồi :X", event.threadID);
+	const indexOfHandle = client.handleReaction.findIndex(e => e.messageID == handleReaction.messageID);
+	client.handleReaction.splice(indexOfHandle, 1);
+	handleReaction.answerYet = 1;
+	return client.handleReaction.push(handleReaction);
+}
+
+module.exports.run = async function({ api, event, Threads }) {
+  let settings = (await Threads.getData(event.threadID)).settings;
+	settings["voteKick"] = 1;
+	var mention = Object.keys(event.mentions);
+	return api.getThreadInfo(event.threadID, (err, info) => {
+		if (err) return api.sendMessage("Đã có lỗi xảy ra!",event.threadID);
+		if (!info.adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage('Cần quyền quản trị viên nhóm\nVui lòng thêm và thử lại!', event.threadID, event.messageID);
+		if(!mention[0]) return api.sendMessage("Bạn phải tag người cần kick",event.threadID);
+		if (info.adminIDs.some(item => item.id == event.senderID)) {
+			for (let o in mention) {
+				setTimeout(() => {
+					api.removeUserFromGroup(mention[o],event.threadID) 
+				},3000)
+			}
+		}
+	})
+}

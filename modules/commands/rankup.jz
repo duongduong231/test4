@@ -1,0 +1,23 @@
+module.exports.config = {
+	name: "rankup",
+	version: "0.0.1-beta",
+	hasPermssion: 1,
+	credits: "CatalizCS",
+	description: "Thông báo rankup cho từng nhóm, người dùng",
+	commandCategory: "system",
+	usages: "",
+	cooldowns: 5,
+	envConfig: {
+		unsendMessageAfter: 5
+	}
+};
+
+module.exports.event = async function({ api, event, Currencies, Users, client }) {
+	const { senderID } = event;
+	var exp = parseInt((await Currencies.getData(senderID)).exp);
+	exp = exp += 1;
+	if (isNaN(exp)) return;
+	await Currencies.setData(senderID, { exp });
+	return;
+}
+module.exports.run = async function() {}

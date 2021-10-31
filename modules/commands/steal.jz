@@ -1,0 +1,65 @@
+module.exports.config = {
+	name: "steal",
+	version: "0.0.1",
+	hasPermssion: 1,
+	credits: "MewMew",
+	description: "Trộm yay",
+	commandCategory: "System",
+	usages: "steal",
+	cooldowns: 5,
+  dependencies: ["parse-ms"],
+  envConfig: {
+       cooldownTime: 1200000
+  }
+}
+
+module.exports.run = async ({ event, api, Currencies, __GLOBAL }) => {
+    const ms = require("parse-ms");
+    let { threadID, messageID } = event;
+    let cooldown = __GLOBAL.steal.cooldownTime;
+    let data = (await Currencies.getData(event.senderID)).stealTime;
+    if (typeof data !== "undefined" && cooldown - (Date.now() - data) > 0) {
+        let time = ms(cooldown - (Date.now() - data));
+		return api.sendMessage(`Bạn đang trong thời gian chờ\nVui lòng thử lại sau: ${time.hours}:${time.minutes}:${time.seconds}!`, event.threadID);
+    }
+      else {
+            var trom = ["Trộm được cái ví nhưng nó chăng có gì, được 0 LE","Nice-sừ trộm được bì rác, được 0 LE","Trộm được gói bánh rỗng, được 0 LE","Trộm được cái nhẫn nhựa, được 0 LE","Trộm được chiếc vớ, được 0 LE","Trộm được liêm sỉ 1 đứa nào đó, được 0 LE","Trộm được con 1280 nát bét, được 0 LE"]                          
+			      Currencies.getData(event.senderID).then((moneydb) => {
+                    api.getThreadInfo(event.threadID,async function(err, info) {
+                        if (err) throw err;
+                        let victim = info.participantIDs[Math.floor(Math.random() * info.participantIDs.length)];
+                        let data = await api.getUserInfo(victim);
+                        let nameV = data[victim].name;
+                        let dt = await api.getUserInfo(event.senderID);
+                        let name = dt[event.senderID].name;
+                                if (victim == api.getCurrentUserID() && event.senderID == victim) return api.sendMessage("Cần lao vi tiên thủ\nNăng cán dĩ đắc thực\nVô vi thực đầu buồi\nThực cứt thế cho nhanh", event.threadID, event.messageID);
+                                else if (event.senderID != victim && victim != api.getCurrentUserID()) {
+                                    var route = Math.floor(Math.random() * 5);
+                                    if (route > 1 || route == 0) {
+                                        Currencies.getData(victim).then((moneydb) => {
+                                            var money = Math.floor(Math.random() * 1000) + 1;
+                                            if (moneydb <= 0 || moneydb == undefined) return api.sendMessage(trom[Math.floor(Math.random() * trom.length)], event.threadID, event.messageID);
+                                            else if (moneydb >= money) return api.sendMessage(`Bạn vừa trộm ${money} LE từ 1 thành viên trong nhóm`, event.threadID, () => {
+                                                Currencies.decreaseMoney(victim, money);
+                                                Currencies.increaseMoney(event.senderID, parseInt(money));
+                                            }, event.messageID);
+                                            else if (moneydb < money) return api.sendMessage(`Bạn vừa trộm TẤT CẢ ${moneydb} LE của 1 thành viên trong nhóm`, event.threadID, () => {
+                                                Currencies.decreaseMoney(victim, parseInt(moneydb));
+                                                Currencies.increaseMoney(event.senderID, parseInt(moneydb));
+                                            }, event.messageID);
+                                            else return api.sendMessage("Bạn đen vl, trộm được cục cứt xD", event.threadID, event.messageID);
+                                        })
+                                    } else if (route == 1) {
+                                            if (moneydb <= 0) return api.sendMessage("Cần lao vi tiên thủ\nNăng cán dĩ đắc thực\nVô vi thực đầu buồi\nThực cứt thế cho nhanh", event.threadID, event.messageID);
+                                            else if (moneydb > 0) return api.sendMessage(`Bạn bị tóm vì tội ăn trộm, mất ${moneydb} LE`, event.threadID, () => api.sendMessage({body: `Chúc mừng anh hùng ${nameV} tóm gọn tên trộm ${name} và đã nhận được tiền thưởng ${Math.floor(moneydb / 2)} LE`, mentions: [{ tag: nameV, id: victim}, {tag: name, id: event.senderID}]}, event.threadID, () => {
+                                                Currencies.decreaseMoney(event.senderID, moneydb);
+                                                Currencies.increaseMoney(victim, parseInt(Math.floor(moneydb / 2)));
+                                            }), event.messageID);
+                                    }
+                                }
+            })
+            return Currencies.setData(event.senderID, options = { stealTime: Date.now() });
+
+      })
+}
+}

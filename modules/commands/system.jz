@@ -1,0 +1,31 @@
+module.exports.config = {
+	name: "system",
+	version: "1.0.0",
+	hasPermssion: 0,
+	credits: "banledangyeuu",
+	description: "",
+	commandCategory: "system",
+	usages: "system",
+	cooldowns: 5,
+	dependencies: ['os']
+};
+
+module.exports.run = ({ event, api }) => {
+    var {threadID, messageID} = event;
+    const os = require('os');
+    let time = process.uptime();
+	let hours = Math.floor(time / (60 * 60));
+	let minutes = Math.floor((time % (60 * 60)) / 60);
+	let seconds = Math.floor(time % 60);
+    return api.sendMessage({body:`=====[SYSTEM]=====\n`
+                     +`\n-CPU-Model: ${os.cpus()[0].model}`
+                     +`\n-CPUS: ${os.cpus().length}`
+                     +`\n-CPU-Speed: ${os.cpus()[0].speed} MHz`
+                     +`\n-CPU-Arch: ${os.arch()} `
+                     +`\n-Memory: ${os.totalmem()/(1024*5)} TB`
+                     +`\n-Free Memory: ${os.freemem()/(1024*5)} TB`
+                     +`\n-Type: ${os.type()}`
+                     +`\n-Uptime: ${hours}:${minutes}:${seconds}\n`
+                     +`\nAdmins: Lê [@banledangyeuu]`,mentions: [{tag: "Lê",id: 100043510592039}]}
+                    , threadID, messageID);
+}
