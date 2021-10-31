@@ -1,0 +1,116 @@
+{
+    "DeveloperMode": false,
+    "autoCreateDB": true,
+    "allowInbox": false,
+    "selfListen": true,
+    "commandDisabled": [],
+    "eventDisabled": [],
+    "banledangyeuu": "banledangyeuu#",
+    "EMAIL1": "danglehoang.04",
+    "PASSWORD1": "danglehoang.04%%",
+    "OTPKEYdlh": "MT6Y N2HP LKNU MVTN 7EY7 RDQM 3TIA YMS2",
+    "EMAIL2": "viet77265@gmail.com",
+    "PASSWORD2": "viethoang199",
+    "OTPKEYbilum": "2ZFE CSK6 G6OE ASYQ AILK 6ZD7 MMY6 TKXA",
+    "EMAIL3": "t26uevi1clvnvp8@badboyvn.club",
+    "PASSWORD3": "ClVNxvL9qRmC6b2@",
+    "OTPKEYminhh": "ERZJ7U2PEYJ3DBO2CSVO3X2XUAN3UZ2E",
+    "EMAIL4": "omgdogemc@hotmail.com",
+    "PASSWORD4": "omgdogemc@",
+    "OTPKEYdead": "NOG2 UZIN XNWE TKJM ETUX BGKV OMQ4 SECL",
+    "EMAIL5": "0922830157",
+    "PASSWORD5": "0922830157@",
+    "OTPKEYtho": "A4WF 4TEV 3FG3 V22R RQYG JQ3J ZL35 MCIU",
+    "EMAIL6": "100067627125494",
+    "PASSWORD6": "lehon31052004@",
+    "OTPKEYdnh": "O2RD K5EV GDN6 SWIT OWK2 VYUQ YEEO 3KWN",
+    "EMAIL": "100068133125715",
+    "PASSWORD": "vinhvien@",
+    "OTPKEY": "QBO4 IXDN QTYS O4LY GEPA IYI3 XSEX IXJM",
+    "EMAIL8": "100041021056622",
+    "PASSWORD8": "minhcoder",
+    "OTPKEYnn": "YG3W VKPD 7WTE XA3C E74K I5ZS ZHCZ UOMR",
+    "BOTNAME": "𝘻𝘦𝘳𝘰 𝘵𝘸𝘰 𝘪𝘻 𝘮𝘦",
+    "BOTNAME.": "Vong",
+    "PREFIX": "/",
+    "ADMINBOT": [
+        "100043510592039",
+        "100011908248971",
+        "100067627125494",
+        "100027477920916",
+        "100050944819621",
+        "100012965707151"
+    ],
+    "ADMINBOT_": [
+        "100043510592039"
+    ],
+    "DATABASE": {
+        "sqlite": {
+            "storage": "data.sqlite"
+        }
+    },
+    "APPSTATEPATH": "appstate.json",
+    "caesar": {
+        "caeserPassword": "266303"
+    },
+    "checktt": {
+        "maxColumn": 10
+    },
+    "crime": {
+        "cooldownTime": 1200000
+    },
+    "daily": {
+        "cooldownTime": 43200000,
+        "rewardCoin": 200
+    },
+    "ghep": {
+        "cooldownTime": 300000,
+        "TOKEN": "EAAAAZAw4FxQIBAACiV0XKqkGSZAiGZBAfTv8ZAAUErucWoorZBBOYKaYRjusidfhVwWpQQcAJk43ucbr3jXf831nxUidoN8pZAFnS5RPjZCt6B4VzwDolGj8rKFDAM8HjcgWZBZBhdNx4b53ZCPFv4oYNiLCBFwjbSDtgrWYsUG6d8UQZDZD"
+    },
+    "gif": {
+        "TENOR": "73YIAOY3ACT1"
+    },
+    "math": {
+        "WOLFRAM": "T8J8YV-H265UQ762K"
+    },
+    "minecraft": {
+        "HYPIXEL_API": "2aaba24d-7fb5-4003-8bfb-d8458a9499a1"
+    },
+    "safety-check": {
+        "APIKEY": "AIzaSyAyPQHnnLU2S6Fqy2x6eZIyFOQGe6Xwiek"
+    },
+    "sauce": {
+        "SAUCENAO_API": "61e802b1478f8e85198f28ed6ac2de6efe5d0a41"
+    },
+    "slut": {
+        "cooldownTime": 1200000
+    },
+    "steal": {
+        "cooldownTime": 1200000
+    },
+    "weather": {
+        "OPEN_WEATHER": "081c82065cfee62cb7988ddf90914bdd"
+    },
+    "work": {
+        "cooldownTime": 1200000
+    },
+    "log": {
+        "enable": true
+    },
+    "sing": {
+        "YOUTUBE_API": "AIzaSyBZQgkQNLKb1X1B9zzlq6yK52bPMZc3n28",
+        "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
+    },
+    "info": {
+        "ACCESS_TOKEN": "EAAAAZAw4FxQIBAJ9l7gsjFIXDqqse0b6UUQJoub8ZBDvgu4yubS99LCLOuiwpuZCjWUxFqju1XPOKmbu0ZBmReU64ejx45kIhfZA5eurPpNuDyjzGijRgo1UsEcFy1iWg3BKYzTzYvbwbZCf6kQ7O0uYd0uqHiZANQhQvuYZBMHGT1JAII3uNoZBZA"
+    },
+    "bitly": {
+        "bitlyAPI": "m3o99ZigQjOrZ8MHzgeNUw"
+    },
+    "sim": {
+        "auto_update": true
+    },
+    "rankup": {
+        "unsendMessageAfter": 5
+    }
+}

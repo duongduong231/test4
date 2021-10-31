@@ -1,0 +1,83 @@
+{
+  "name": "miraiBot",
+  "version": "1.0.2",
+  "description": "A simple Facebook Messenger Bot made by me(CatalizCS) and my brother SpermLord.",
+  "main": "mirai.js",
+  "pm2": "pm2 start pm2.config.js --no-daemon",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "node --trace-warnings --use_strict --async-stack-traces mirai",
+    "login": "node login",
+    "test": "node --trace-warnings --use_strict --async-stack-traces mirai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catalizcs/miraiv2.git"
+  },
+  "keywords": [
+    "bot",
+    "facebook",
+    "projectmirai",
+    "messenger",
+    "mirai",
+    "catalizcs",
+    "spermlord"
+  ],
+  "author": "CatalizCS & SpermLord",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/catalizcs/miraiv2/issues"
+  },
+  "homepage": "https://github.com/catalizcs/miraiv2#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "authenticator": "^1.1.5",
+    "axios": "^0.21.1",
+    "bitly": "^7.1.2",
+    "body-parser": "",
+    "caesar-salad": "^2.1.0",
+    "canvas": "^2.8.0",
+    "chalk": "",
+    "cheerio": "",
+    "child_process": "",
+    "express": "^4.17.1",
+    "fast-speedtest-api": "^0.3.2",
+    "fb-tools": "^1.0.10",
+    "fca-unofficial": "",
+    "figlet": "",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^10.0.0",
+    "jimp": "^0.16.1",
+    "minimist": "",
+    "moment": "",
+    "moment-timezone": "^0.5.33",
+    "morsify": "^2.4.0",
+    "ms": "",
+    "node-cmd": "^4.0.0",
+    "npmlog": "",
+    "parse-ms": "^3.0.0",
+    "path": "^0.12.7",
+    "pm2": "^4.5.6",
+    "qrcode": "^1.4.4",
+    "readline": "",
+    "request": "^2.88.2",
+    "safe-browse-url-lookup": "^0.1.1",
+    "sagiri": "^3.1.1",
+    "semver": "",
+    "sequelize": "^6.6.2",
+    "simple-youtube-api": "^5.2.1",
+    "soundcloud-downloader": "^1.0.0",
+    "sqlite3": "^5.0.2",
+    "string-similarity": "",
+    "systeminformation": "^5.7.3",
+    "tiktok-scraper": "^1.4.24",
+    "tinyurl": "^1.1.7",
+    "totp-generator": "",
+    "vm2": "^3.9.3",
+    "wikijs": "^6.2.1",
+    "ytdl-core": "^4.8.3",
+    "pet-pet-gif": "^1.0.8"
+  }
+}
